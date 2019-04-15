@@ -22,6 +22,10 @@ int cal_cnt = 0;
 
 void setup()
 {
+  // set the speed at 60 rpm:
+   myStepper.setSpeed(10);
+   // initialize the serial port:
+   
   Serial.begin(9600); // Initialize serial connection to display distance readings
 
   lidarLite.begin(0, true); // Set configuration to default and I2C to 400 kHz
@@ -59,9 +63,6 @@ void loop()
 }
 
 void step_motor(){
-  // set the speed at 60 rpm:
-   myStepper.setSpeed(10);
-   // initialize the serial port:
-   Serial.begin(9600);
+  
    
 }
